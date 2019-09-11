@@ -1,0 +1,37 @@
+/*
+ * Robert Thibodeau
+ * 9/11/2019
+ * CSC-111
+ * Java Programming
+ * Cost of trip
+ * rthibodeau0001@student.stcc.edu
+ * Calculate the cost of a trip goven the distance, MPG, and price of fuel
+ */
+package tripcost;
+
+import java.util.Scanner;
+
+public class CostOfDriving {
+
+	public static void main(String[] args) {
+		//Create variable input and assign keyboard input to it;
+				Scanner input = new Scanner(System.in);
+				
+				//Create variables for parameters and ask for input;
+				System.out.println("Enter the distance of the trip: ");
+				double distance = input.nextDouble();
+				System.out.println("Enter the fuel efficiency of the vehicle in MPG: ");
+				double mpg = input.nextDouble();
+				System.out.println("Enter the price per gallon of the fuel: ");
+				double price = input.nextDouble();
+				
+						
+				//Calculate the cost of the trip
+				double cost = distance / mpg * price;
+								
+				//Display results;
+				System.out.println("The cost of your trip is: $" + cost);
+				
+
+			}
+}
